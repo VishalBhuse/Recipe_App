@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./styles/styel.css">
+</head>
+<body>
+    <div id="nav">
+
+    </div>
+    
+    <h1 class="h1s">Random Recipe</h1>
+    <div class="sideinfo">
+
+    </div>
+
+    
+
+    <div class="tables">
+        <div class="theading">
+          <div>Ingredients</div>
+          <div>Measures</div>
+        </div>
+        <div class="tdata">
+          <div class="ingrediant">
+            
+        </div>
+          <div class="measure"></div>
+        </div>
+      </div>
+
+
+      <div class="watchVideo">
+        
+        <h1>
+          Watch Video : <a href="" id="youplayer" target="_blank"> link *</a>
+        </h1>
+      </div>
+    
+</body>
+</html>
+<script type="module">
+
+import {navbar,getData,append1} from "./script/allfunction.js";
+  document.getElementById("nav").innerHTML = navbar();
+
+let url ='https://www.themealdb.com/api/json/v1/1/random.php';
+
+let contain = document.querySelector(".sideinfo");
+
+getData(url).then((res)=>{
+    append1(res,contain)
+})
+
+
+
+</script>

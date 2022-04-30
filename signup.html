@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./styles/styel.css">
+</head>
+<body>
+    <div id="nav">
+
+    </div>
+
+    <div class="formsdaat">
+      <h1>Sign Up </h1>
+        <form action="">
+
+            <input type="text" name="name" placeholder="name" id="name"><br><br>
+            <input type="text" name="email" placeholder="email" id="email"><br><br>
+            <input type="password" name="password" placeholder="password" id="password"><br><br>
+            <input type="text" name="username" placeholder="username" id="username"><br><br>
+            <input type="text" name="mobile" placeholder="mobile" id="mobile"><br><br>
+            <input type="text" name="description" placeholder="description" id="description"><br><br>
+            <button id="submit">submit</button>
+        </form>
+
+
+    </div>
+    
+</body>
+</html>
+<script type="module">
+  import {navbar,register} from "./script/allfunction.js";
+  document.getElementById("nav").innerHTML = navbar();
+
+  document.getElementById("submit").addEventListener("click", register);
+
+
+
+</script>

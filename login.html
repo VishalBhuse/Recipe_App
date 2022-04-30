@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./styles/styel.css">
+</head>
+<body>
+    <div id="nav">
+
+    </div>
+    <div class="formsdaat">
+        <h1>Login Up </h1>
+          <form action="">
+  
+              <input type="text" name="email" placeholder="Enter your email" id="email"><br><br>
+              <input type="password" name="password" placeholder="Enter your password" id="password"><br><br>
+              <button id="submit">submit</button>
+          </form>
+  
+  
+      </div>
+    
+</body>
+</html>
+<script type="module">
+
+import {navbar,getUserDetail,login} from "./script/allfunction.js";
+  document.getElementById("nav").innerHTML = navbar();
+
+  document.getElementById("submit").addEventListener("click", login);
+         
+</script>
