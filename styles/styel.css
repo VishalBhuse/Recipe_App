@@ -185,3 +185,6 @@ background: radial-gradient(circle, rgba(251,104,63,1) 0%, rgba(116,109,111,1) 1
     font-size: 13px;
     color: rgb(85, 85, 66);
 }
+#User-Details h1{
+    color: rgb(85, 85, 66);
+}
